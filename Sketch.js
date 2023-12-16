@@ -19,7 +19,7 @@
    
    let btn_popup = document.querySelector("#popup");
    btn_popup.addEventListener("click", function(){
-     let size = getsize();
+     let size = getSize();
      createBoard(size);
    })
     
@@ -41,7 +41,7 @@
 
 }
 
-function getsize (){
+function getSize(){
     let input = prompt("What will be the size of the board?");
     let message = document.querySelector("#message");
     if(input = ""){
@@ -52,8 +52,8 @@ function getsize (){
     }
     else {
         message.innerHTML = "Now you play";
-        return input;
     }
+    return input;
 }
 
 function colorDiv(){
