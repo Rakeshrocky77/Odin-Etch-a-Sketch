@@ -5,7 +5,7 @@
    createBoard(16);
 
   document.querySelector("body").addEventListener("click",function(e){
-    if(e.target.tagName != "BUTTON"){
+    if(e.target.tagName != "button"){
         click = !click;
         let draw = document.querySelector("#draw");
         if(click){
